@@ -40,11 +40,9 @@
 .read-the-docs {
   color: #888;
 }
-
 .cars-table th,
 .cars-table td {
   text-align: left;
   padding: 1.5rem 1rem; /* Increased padding for better spacing */
   border-bottom: 1px solid rgba(255,255,255,0.04);
 }
-
