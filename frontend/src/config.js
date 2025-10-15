@@ -1,2 +1,2 @@
-const config = { baseUrl: "http://localhost:2006/api/cars" };
+const config = { baseUrl: "http://localhost:9000/cars" };
 export default config;

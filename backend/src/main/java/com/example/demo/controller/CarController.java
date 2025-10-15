@@ -15,15 +15,18 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.model.Car;
 import com.example.demo.repository.CarRepository;
 @RestController
-@RequestMapping("/api/cars")
-@CrossOrigin(origins = "http://localhost:5173")
+@RequestMapping("/cars")
+@CrossOrigin(origins = "*")
 public class CarController {
 	 private final CarRepository repo;
 
 	    public CarController(CarRepository repo) {
 	        this.repo = repo;
 	    }
-
+	    @GetMapping("/home")
+        public String home() {
+        	return "home";
+        }
 	    @GetMapping
 	    public List<Car> getAllCars() {
 	        return repo.findAll();
